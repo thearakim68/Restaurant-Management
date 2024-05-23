@@ -1,6 +1,6 @@
 <template>
     <Header />
-    <h1>Hello {{ name }}, Welcome on Home Page</h1>
+    <h1>Hello {{ name }}, Welcome on Homepage</h1>
 </template>
 
 <script>
