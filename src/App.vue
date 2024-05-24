@@ -37,7 +37,7 @@ body {
     .logo {
         width: 100px;
     }
-    input {
+    .login input, .register input, .add input {
         width: 300px;
         height: 40px;
         padding-left: 16px;
@@ -48,7 +48,7 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
-    .card-register button {
+    .card-register button, .add button {
         width: 320px;
         height: 44px;
         border-radius: 4px;
