@@ -10,7 +10,8 @@
     </form>
 </template>
 <script>
-    import Header from "./Header.vue"
+    import Header from "./Header.vue";
+    import axios from 'axios'
       export default {
           name: "Add",
           components: {
@@ -26,9 +27,20 @@
             }
           },
           methods: {
-            addRestaurant()
+            async addRestaurant()
                 {
                     console.warn(this.restaurant)
+                    let result = await axios.post("http://localhost:3000/restsurant", 
+                        {
+                            name: this.restaurant.name,
+                            address: this.restaurant.address,
+                            contact: this.restaurant.contact,
+                        }
+                    );
+                    if (result.status == 201)
+                    {
+                        this.$router.push({name: "Home"})
+                    }
                 }
           },
           mounted() {
