@@ -96,4 +96,3 @@ export default {
     margin-top: -10px; /* Adjust margin for email and password error messages */
 }
 </style>
-
