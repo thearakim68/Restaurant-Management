@@ -30,7 +30,7 @@
             async addRestaurant()
                 {
                     console.warn(this.restaurant)
-                    let result = await axios.post("http://localhost:3000/restsurant", 
+                    let result = await axios.post("http://localhost:3000/restaurant", 
                         {
                             name: this.restaurant.name,
                             address: this.restaurant.address,
